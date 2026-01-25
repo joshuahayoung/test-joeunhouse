@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG80SWQYC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GEG80SWQYC');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>께레따로 하숙 조은하우스 | 멕시코 께레따로 한인 하숙 & 도시락 배달</title>
+  <meta name="description" content="멕시코 께레따로 후리키야 위치. 정갈한 한국 가정식 식사, 쾌적한 객실, 기업체 단체 도시락 배달 전문. 께레따로 한인 하숙의 중심 조은하우스입니다.">
+  <meta name="keywords" content="께레따로 하숙, 께레따로 한인민박, 께레따로 한국인, 멕시코 께레따로 게스트하우스, 께레따로 한국식당, 께레따로 도시락, 후리키야 하숙, Querétaro Korean House">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="께레따로 조은하우스 - 내 집 같은 편안한 하숙">
+  <meta property="og:description" content="정성 가득한 집밥과 안락한 공간. 께레따로 출장자 및 장기 체류자 환영.">
+  <meta property="og:image" content="images/Logo-solo-Joeun-house-2.jpg">
+  <meta property="og:url" content="https://www.joeunhouse.com">
+
+  <link rel="canonical" href="https://www.joeunhouse.com">
+  <link rel="icon" type="image/jpeg" href="images/Logo-solo-Joeun-house-2.jpg">
+  <link rel="shortcut icon" href="images/Logo-solo-Joeun-house-2.jpg" type="image/jpg">
+  <link rel="apple-touch-icon" href="images/Logo-solo-Joeun-house-2.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+<style>
+    /* 1. 기본 설정 */
+    html, body {
+      margin: 0; padding: 0; width: 100%; overflow-x: hidden; 
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    * { box-sizing: border-box; }
+
+    /* [상단 고정 헤더] */
+    .sticky-top {
+      position: sticky; top: 0; z-index: 1000; width: 100%;
+      background: #fcfaf3; /* 로고 바탕색에 맞춘 미색 유지 */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .top-bar {
+      background-color: #806600; color: white; text-align: center;
+      padding: 12px 0; font-size: 13px; /* 11px에서 13px로 키움 */
+      font-family: 'Oswald', sans-serif; letter-spacing: 2px; /* 1.5px에서 2px로 넓힘 */
+      font-weight: 400;
+    }
+
+    .header-wrapper {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; height: 100px; /* 90px에서 100px로 키움 */
+    }
+
+    .logo-area { display: flex; align-items: center; text-decoration: none; color: #333; }
+    .logo-img { height: 60px; width: auto; display: block; }
+    .logo-text { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; margin-left: 12px; }
+
+    .nav-links { display: flex; gap: 10px; align-items: center; }
+    .nav-links a {
+      text-decoration: none; color: #444; 
+      transition: 0.3s; padding: 8px 15px; border-radius: 6px;
+      display: flex; flex-direction: column; align-items: center; line-height: 1.2;
+    }
+    .nav-links a .en {
+      font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .nav-links a .ko {
+      font-size: 12px; font-weight: 400; margin-top: 2px; opacity: 0.7;
+    }
+    .nav-links a.active { background-color: #806600; color: #fff; }
+    .nav-links a.active .ko { opacity: 1; }
+    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #a89277; }
+
+    .close-menu, .mobile-menu-logo { display: none; }
+    .menu-toggle { display: none; font-size: 30px; cursor: pointer; background: none; border: none; color: #a89277; }
+
+    @media (max-width: 1024px) {
+      .header-wrapper { padding: 0 20px; height: 85px; justify-content: flex-start; gap: 15px; }
+      .menu-toggle { display: block; order: 1; } 
+      .logo-area { order: 2; } 
+      .logo-text { display: none; } 
+      .logo-img { height: 50px; }
+      .nav-links {
+        position: fixed; top: 0; left: -100%; width: 270px; height: 100vh;
+        background: #fcfaf3 !important; 
+        flex-direction: column;
+        padding: 40px 25px; transition: 0.3s; z-index: 2000;
+        box-shadow: 10px 0 20px rgba(0,0,0,0.1); align-items: flex-start;
+      }
+      .nav-links.active { left: 0; }
+      .nav-links a { width: 100%; flex-direction: row; gap: 10px; padding: 15px; border-bottom: 1px solid #e0ddd5; align-items: center; }
+      .nav-links a .ko { font-size: 13px; margin-top: 0; }
+      .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #a89277; cursor: pointer; }
+      
+      .mobile-menu-logo { display: block; margin-bottom: 25px; width: 100%; text-align: left; }
+      .mobile-menu-logo img { width: 80px; height: auto; display: block; }
+    }
+
+    #fixedTopBtn {
+      position: fixed !important; 
+      bottom: 25px !important; 
+      right: 20px !important; 
+      width: 50px; 
+      height: 50px;
+      background-color: #a89277; 
+      color: #fff; 
+      border: none; 
+      border-radius: 50%;
+      font-weight: 900; 
+      font-size: 12px; 
+      z-index: 999999 !important; 
+      cursor: pointer; 
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .container { max-width: 850px; margin: 0 auto; padding: 50px 20px; }
+  </style>
+</head>
+
+<body>
+  <div class="sticky-top">
+    <div class="top-bar">멕시코 께레따로 후리끼야 | JOEUN HOUSE 오피셜 홈</div>
+    
+    <header class="header-wrapper">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      
+      <a href="index.html" class="logo-area">
+        <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House" class="logo-img"> 
+        <span class="logo-text">Joeun House</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <span class="close-menu" onclick="toggleMenu()">✕</span>
+        <div class="mobile-menu-logo">
+            <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House">
+        </div>
+        
+        <a href="index.html" class="active">
+          <span class="en">HOME</span>
+          <span class="ko">홈</span>
+        </a>
+        <a href="accommodations.html">
+          <span class="en">Accommodations</span>
+          <span class="ko">객실안내</span>
+        </a>
+        <a href="dining-lunch.html">
+          <span class="en">Dining & Lunch</span>
+          <span class="ko">식사/도시락</span>
+        </a>
+        <a href="transportation.html">
+          <span class="en">Transportation</span>
+          <span class="ko">교통/서비스</span>
+        </a>
+        <a href="contact.html">
+          <span class="en">Contact</span>
+          <span class="ko">예약/문의</span>
+        </a>
+      </nav>
+    </header>
+  </div>
+
+  <button id="fixedTopBtn" onclick="scrollToTop()">TOP</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const btn = document.getElementById('fixedTopBtn');
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      
+      if (scrollTop > 100) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  
+
+
+<div style="text-align: center; margin: 30px auto; padding: 0 20px; max-width: 900px; font-family: 'Malgun Gothic', sans-serif;">
+  <div style="margin-bottom: 25px;">
+    <span style="display: block; font-size: 14px; color: #a89277; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 15px; font-weight: 300;">Honest Meals, Just Like Mom’s</span>
+    <h1 style="font-size: 34px; color: #2c2c2c; font-weight: 800; line-height: 1.4; margin: 0; letter-spacing: -1.5px;">
+      <span style="color: #a89277;">조은 하우스</span>에서,<br>
+      <span style="color: #a89277;">정성</span>을 다해 모시겠습니다.
+    </h1>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
+      <div style="width: 30px; height: 1px; background: #dcd6cc;"></div>
+      <div style="width: 6px; height: 6px; border: 1px solid #a89277; transform: rotate(45deg); margin: 0 15px;"></div>
+      <div style="width: 30px; height: 1px; background: #dcd6cc;"></div>
+    </div>
+  </div>
+
+<div class="container" style="padding: 10px 0; max-width: 1000px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+    <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+      <img src="https://drive.google.com/thumbnail?id=1WAjFROtWvS6Df9Jo-JFjC7OYKewyl5dz&sz=w1000" alt="Hotel Style" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+      <img src="https://drive.google.com/thumbnail?id=1nzEgMr2wKFzVTgTdvfGEkj9LfuEiHla7&sz=w1000" alt="Private House" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; font-family: 'Malgun Gothic', sans-serif;">
+    
+    <div style="padding: 30px 15px; background: #fdfcfb; border: 1px solid #f0ede9; border-radius: 8px; text-align: center;">
+      <div style="font-size: 11px; color: #a89277; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase;">Type 01</div>
+      <div style="font-size: 18px; color: #333; font-weight: 700; margin-bottom: 2px;">호텔형 객실</div>
+      <div style="font-size: 12px; color: #999; font-family: 'Georgia', serif; font-style: italic; margin-bottom: 12px;">Estilo Hotel</div>
+      <div style="font-size: 13px; color: #666; line-height: 1.6; word-break: keep-all;">
+        정갈한 한식 식사와 세탁 서비스까지, <br>
+        오직 휴식에만 집중할 수 있는 공간입니다.
+      </div>
+    </div>
+    
+    <div style="padding: 30px 15px; background: #fdfcfb; border: 1px solid #f0ede9; border-radius: 8px; text-align: center;">
+      <div style="font-size: 11px; color: #a89277; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase;">Type 02</div>
+      <div style="font-size: 18px; color: #333; font-weight: 700; margin-bottom: 2px;">개인 주택형</div>
+      <div style="font-size: 12px; color: #999; font-family: 'Georgia', serif; font-style: italic; margin-bottom: 12px;">Casa Privada</div>
+      <div style="font-size: 13px; color: #666; line-height: 1.6; word-break: keep-all;">
+        가족과 함께 혹은 동료와 함께, <br>
+        타지에서도 내 집 같은 편안함을 드립니다.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+  .testi-wrapper {
+    max-width: 850px;
+    margin: 10px auto 40px;
+    padding: 30px 15px;
+    background: #fafafa;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  }
+  /* 화살표 아이콘이 잘 보이도록 보완 */
+  .testi-btn i {
+    pointer-events: none; /* 아이콘 클릭 방해 방지 */
+  }
+</style>
+
+<div class="testi-wrapper">
+  <i class="fas fa-quote-right" style="font-size: 30px; color: #e5e0d8; margin-bottom: 10px; display: block;"></i>
+  <h3 style="font-size: 16px; color: #a89277; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; font-weight: 700;">Guest Stories</h3>
+  
+  <div id="testi-container" style="position: relative; overflow: hidden; width: 100%;">
+    
+    <div class="testi-group" style="display: block; opacity: 1; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"무엇을 요청드려도 항상 내 일처럼 정성을 다해 도와주시는 모습에 큰 힘을 얻었습니다. 불편함이 없는지 세심히 살펴주시는 따뜻한 배려 덕분에 낯선 멕시코 출장길이 한결 편안했습니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">최OO 기술팀장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 전자 본사 출장단</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"타지 생활에서 가장 힘든 게 음식인데, 조은하우스로 옮기고 나서 고민이 사라졌습니다. 다른 곳과는 비교할 수 없는 식재료의 신선함과 정갈한 맛에 매번 감동합니다. 정말 '급'이 다른 집밥이에요."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">오OO 팀장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 전기 협력사 기술지원팀</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"멕시코 출장이 처음이라 걱정이 많았는데 사장님이 가족처럼 현지 생활을 알려주셔서 금방 적응했습니다. 특히 정갈한 도시락은 한국 집밥보다 더 맛있었어요!"</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">김OO 기술부장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 전기 냉방사업부</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"숙소가 깨끗하고 조용해서 업무 후에 쉬기 최적입니다. Juriquilla 중심가와 가깝고 보안이 철저해서 안심하고 지낼 수 있었습니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">이OO 팀장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 자동차 멕시코 법인</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"청소와 세탁 서비스 덕분에 업무에만 집중할 수 있었습니다. 사장님의 세심한 배려에 멕시코 출장 때마다 무조건 여기로 옵니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">박OO 소장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 디스플레이 현장관리</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"장기 투숙을 했는데 식단이 매일 바뀌어서 질리지 않았습니다. 덕분에 건강하게 일정 마쳤습니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">최OO 수석</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 전기 구매팀</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"인터넷 속도가 빨라 화상 회의에 불편함이 없었습니다. 비즈니스 출장객에게 최적화된 곳입니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">정OO 과장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 건설 현장</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"침구류 상태가 특급 호텔급입니다. 멕시코에서 이 정도 수준의 한인 숙소를 찾기는 정말 쉽지 않을 것 같네요."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">한OO 대리</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 물류팀</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"현지 렌트카 상담까지 사장님 도움을 많이 받았습니다. 단순 숙소를 넘어 현지 비즈니스 파트너 같았습니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">윤OO 지사장</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">글로벌 협력사 멕시코 지사</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"주방장님의 솜씨가 대단합니다. 아침마다 정성스러운 한식을 먹으면 하루 업무를 시작할 에너지가 생깁니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">임OO 선임</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 이노베이션</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"치안 걱정을 많이 했는데 단지가 정말 안전했습니다. 저녁에 가벼운 산책도 가능할 정도였어요."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">강OO 연구원</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 전력기술</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"공간이 넉넉해서 팀원들과 소통하며 지내기에 딱 좋았습니다. 비즈니스 팀 단위 방문객에게 강력 추천합니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">조OO 이사</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">신규 프로젝트 TF팀</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-group" style="display: none; opacity: 0; transition: opacity 0.8s ease; width: 100%;">
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px 15px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"장기 출장 시 가장 걱정되는 게 보안과 식사인데, 조은하우스는 이 두 가지를 완벽하게 해결해 줍니다. 다음 출장에도 고민 없이 선택할 것입니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">성OO 책임</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">OO 엔지니어링</span>
+        </div>
+      </div>
+      <div class="testi-card-inner" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; margin: 0 10px;">
+        <p style="font-size: 15px; line-height: 1.8; color: #444; margin-bottom: 20px; word-break: keep-all;">"낯선 멕시코 환경에서 한국어로 모든 생활 상담이 가능하다는 것이 큰 위안이 되었습니다. 서비스 하나하나에 정성이 느껴지는 최고의 한인 숙소입니다."</p>
+        <div style="text-align: center; border-top: 1px solid #f5f5f5; padding-top: 15px;">
+          <strong style="font-size: 14px; color: #333; display: block;">정OO 이사</strong>
+          <span style="font-size: 12px; color: #999; margin-top: 5px; display: block;">IT 솔루션 해외사업부</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 25px; margin-top: 25px; position: relative; z-index: 10;">
+    <button onclick="changeGroup(-1)" style="background: white; border: 1px solid #e0e0e0; width: 55px; height: 55px; border-radius: 50%; cursor: pointer; color: #a89277; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button onclick="changeGroup(1)" style="background: white; border: 1px solid #e0e0e0; width: 55px; height: 55px; border-radius: 50%; cursor: pointer; color: #a89277; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+<script>
+  // 스크립트가 중복 선언되지 않도록 주의하세요.
+  var groupIdx = 0;
+  function changeGroup(n) {
+    var groups = document.getElementsByClassName("testi-group");
+    if(groups.length === 0) return;
+    
+    // 현재 그룹 숨기기
+    groups[groupIdx].style.opacity = "0";
+    
+    setTimeout(function() {
+      groups[groupIdx].style.display = "none";
+      // 다음 인덱스 계산
+      groupIdx = (groupIdx + n + groups.length) % groups.length;
+      // 다음 그룹 보이기
+      groups[groupIdx].style.display = "block";
+      setTimeout(function() { 
+        groups[groupIdx].style.opacity = "1"; 
+      }, 50);
+    }, 400);
+  }
+</script>
+
+
+<div style="margin-bottom: 50px;">
+    <p style="font-size: 1.1rem; color: #666; line-height: 1.8; margin: 0;">
+      타지에서 만나는 우리 집 같은 아늑함, <br>
+      <span style="color: #333; font-weight: 700;">당신을 위한 진심 어린 공간, </span>
+      <span style="display: inline-block; padding-bottom: 2px; border-bottom: 2px solid #a89277; color: #2c2c2c; font-weight: 800;">JOEUN HOUSE</span>
+    </p>
+  </div>
+
+  
+<style>
+  /* 정성어린식단 섹션 */
+</style>
+
+<style>
+  /* 그리드 레이아웃 설정 */
+  .custom-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  /* 개별 카드 설정 */
+  .custom-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 30px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+  }
+
+  /* 아이콘 크기 고정 (이 부분이 핵심입니다) */
+  .icon-wrapper svg {
+    width: 48px;  /* 아이콘 가로 크기 */
+    height: 48px; /* 아이콘 세로 크기 */
+    fill: #a89277; /* 로고와 통일감 있는 색상 */
+    margin-bottom: 15px;
+  }
+
+  .custom-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  .custom-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+  }
+
+  /* 모바일 대응: 화면이 작아지면 한 줄에 하나씩 */
+  @media (max-width: 768px) {
+    .custom-card {
+      min-width: 100%;
+    }
+    .icon-wrapper svg {
+      width: 42px; /* 모바일에서는 살짝 더 작게 조정 */
+      height: 42px;
+    }
+  }
+</style>
+
+<div class="custom-grid">
+  <div class="custom-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2H2v2c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4zm-4-4v2H6V5h12zM2 19c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-2H2v2z"/></svg>
+    </div>
+    <h3>정성 어린 식단 / Comidas con Esmero</h3>
+    <p>오랜 기간 임직원분들께 검증받은<br>균형 잡힌 한식과 주말 특식을 제공합니다.</p>
+  </div>
+
+  <div class="custom-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24"><path d="M7 13h5v-2H7v2zm0 4h5v-2H7v2zm0-8h5V7H7v2zm12-5h-2V2H7v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V6h14v14zM14 13h3v-2h-3v2zm0 4h3v-2h-3v2zm0-8h3V7h-3v2z"/></svg>
+    </div>
+    <h3>다양한 숙소 인프라 / Diversas Instalaciones</h3>
+    <p>호텔 및 독채 주택을 다수 보유하여<br>개인 및 대규모 인원 수용이 가능합니다.</p>
+  </div>
+
+  <div class="custom-card">
+    <div class="icon-wrapper">
+      <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.27-3.82c.14-.4.52-.68.95-.68h9.56c.43 0 .81.28.95.68L19 11H5z"/></svg>
+    </div>
+    <h3>안전한 교통 지원 / Soporte de Transporte</h3>
+    <p>전용 차량 및 택시 서비스를 통해<br>출퇴근의 편의와 안전을 책임집니다.</p>
+  </div>
+</div>
+
+  
+<style>
+  /* 다이닝 옵션 섹션 */
+</style>
+
+
+<div class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
+  
+  <div style="text-align: center; margin-bottom: 30px;">
+    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #a89277; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Authentic Korean Taste</span>
+    <h2 style="color: #a89277; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성으로 차린 따뜻한 집밥</h2>
+    <div style="width: 40px; height: 2px; background: #a89277; margin: 15px auto 0;"></div>
+  </div>
+
+  <div id="dining-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; transition: opacity 0.3s ease;">
+    </div>
+
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; gap: 80px;">
+    <button id="prevPage" style="background: none; border: none; cursor: pointer; color: #a89277; font-size: 70px; font-weight: 900; line-height: 1; padding: 0; transition: 0.3s; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.1));">❮</button>
+    <div style="text-align: center;">
+        <span id="pageIndicator" style="font-family: 'Malgun Gothic', sans-serif; font-size: 1rem; color: #a89277; font-weight: 700; letter-spacing: 2px;">1 / 2</span>
+    </div>
+    <button id="nextPage" style="background: none; border: none; cursor: pointer; color: #a89277; font-size: 70px; font-weight: 900; line-height: 1; padding: 0; transition: 0.3s; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.1));">❯</button>
+  </div>
+
+  <div class="dining-info" style="background: #fafafa; padding: 35px 30px; border-radius: 20px; text-align: left; margin-top: 40px; border: 1px solid #eee;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <div style="font-size: 28px; color: #a89277; flex-shrink: 0; margin-top: 3px;"><i class="fas fa-utensils"></i></div>
+      <div>
+        <h3 style="color: #a89277; font-size: 1.3rem; margin: 0 0 15px 0; font-weight: 700;">진심을 담아 준비하는 정통 한국 가정식</h3>
+        <p style="margin: 0; color: #444; font-size: 1.05rem; line-height: 1.9; word-break: keep-all;">
+          멕시코 현지에서 한국의 맛을 지키기 위해 고집스럽게 노력해 온 <strong>실력 있는 요리사의 손길</strong>로 매일의 식탁을 채웁니다. 엄선된 최상급 식재료만을 사용하여 정성껏 준비한 아침 및 저녁 식사를 제공하며, 먼 타지 생활 속에서도 <strong>고향의 따뜻한 위로와 건강한 에너지</strong>를 얻으실 수 있도록 온 마음을 다합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  (function() {
+    const page1Ids = [
+      '1glH9ChuLsQrHT1fkiyh4XalaohNuu12b', '1VrdN8tmpvmew_LeVGJ2_O78k8yTxbYy-',
+      '1Qt5QiSaBESvLdubUCgWENTj7uoMEOM9q', '1PAwAxNVrdGGkA8sVJXzI_6MG4md_xPDB',
+      '1IIoqUX4rUpwCWv4qrFhqJsuLJ_V8Mx9d', '13-OOgVTi-URtNshkfSbo8NHy_PDU9uyl',
+      '15JABSdQESKl9B-pXhSv5PEUkHjZ87-np', '1G7lpPlI07mfvPWIV0SVWnHHyPZSU3iAX'
+    ];
+
+    const page2Ids = [
+      '1z82Fcoq-PoXTNBaCqlBTWBKjorqwHnJK', '1gEWo5M6P-ksuTnh5AGHOqT65IegM4tx2',
+      '1tLjF45RxxmzDJJSX5Zy2Cz9eVabVVhLQ', '1h4k6RlEIO_6vFnGy9q1-s3VwWjCYeiLt',
+      '1IMGN4Shc4Er1AyL5ZIB-6TstQ_cmyuhC', '1uJzS3QaFg4ZPiOdlZirRDq6Omt8Fgvti',
+      '1tBfBRvhnZA65rkFIjUpr0mRKJ8V1Ty_Q', '1zAZGFbIx3m-HPB4Of4Eq_d7Ai93j5ZJf'
+    ];
+
+    const allImageIds = [...page1Ids, ...page2Ids];
+    const diningImages = allImageIds.map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`);
+    
+    let currentPage = 1;
+    const gridContainer = document.getElementById('dining-grid');
+    const pageIndicator = document.getElementById('pageIndicator');
+
+    function renderGrid(page) {
+      gridContainer.style.opacity = '0';
+      setTimeout(() => {
+        gridContainer.innerHTML = '';
+        const start = (page - 1) * 8;
+        const currentIds = allImageIds.slice(start, start + 8);
+
+        currentIds.forEach((id, index) => {
+          const actualIndex = start + index;
+          const img = document.createElement('img');
+          img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
+          img.style.cssText = "width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; cursor: pointer; border: 1px solid #eee; transition: transform 0.3s ease;";
+          img.onmouseover = () => img.style.transform = "scale(1.03)";
+          img.onmouseout = () => img.style.transform = "scale(1)";
+          img.onclick = () => popupDiningGallery(actualIndex);
+          gridContainer.appendChild(img);
+        });
+        
+        pageIndicator.innerText = `${page} / 2`;
+        gridContainer.style.opacity = '1';
+        currentPage = page;
+      }, 200);
+    }
+
+    document.getElementById('prevPage').onclick = () => { renderGrid(currentPage === 1 ? 2 : 1); };
+    document.getElementById('nextPage').onclick = () => { renderGrid(currentPage === 2 ? 1 : 2); };
+
+    renderGrid(1);
+
+    function popupDiningGallery(index) {
+      const w = window.innerWidth > 1000 ? 1000 : window.innerWidth;
+      const h = window.innerHeight > 900 ? 900 : window.innerHeight;
+      const left = (screen.width / 2) - (w / 2);
+      const top = (screen.height / 2) - (h / 2);
+      const popup = window.open("", "DiningGallery", "width="+w+",height="+h+",top="+top+",left="+left+",resizable=yes");
+      
+      let htmlContent = '<html><head><title>Dining Gallery</title><style>';
+      htmlContent += 'body { margin: 0; background: #000; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; font-family: sans-serif; }';
+      htmlContent += '.nav-btn { position: absolute; top: 50%; transform: translateY(-50%); font-size: 60px; color: rgba(255,255,255,0.4); cursor: pointer; user-select: none; padding: 30px; transition: 0.3s; z-index: 100; }';
+      htmlContent += '.nav-btn:hover { color: white; } #prev { left: 10px; } #next { right: 10px; }';
+      htmlContent += '#close { position: absolute; top: 25px; right: 25px; font-size: 45px; cursor: pointer; opacity: 0.6; z-index: 101; }';
+      htmlContent += '#mainImg { max-width: 90%; max-height: 80vh; object-fit: contain; border-radius: 4px; transition: opacity 0.2s; }';
+      htmlContent += '.counter { position: absolute; bottom: 30px; font-size: 16px; letter-spacing: 2px; color: rgba(255,255,255,0.6); }';
+      htmlContent += '</style></head><body>';
+      htmlContent += '<div id="close" onclick="window.close()">×</div>';
+      htmlContent += '<div id="prev" class="nav-btn" onclick="move(-1)">❮</div>';
+      htmlContent += '<img id="mainImg" src="' + diningImages[index] + '" onclick="move(1)">';
+      htmlContent += '<div id="next" class="nav-btn" onclick="move(1)">❯</div>';
+      htmlContent += '<div class="counter" id="countDisplay">' + (index + 1) + ' / ' + diningImages.length + '</div>';
+      htmlContent += '<script>';
+      htmlContent += 'let idx = ' + index + '; const imgArray = ' + JSON.stringify(diningImages) + ';';
+      htmlContent += 'function move(step) { idx = (idx + step + imgArray.length) % imgArray.length; const img = document.getElementById("mainImg"); img.style.opacity = 0.5;';
+      htmlContent += 'setTimeout(() => { img.src = imgArray[idx]; document.getElementById("countDisplay").innerText = (idx + 1) + " / " + imgArray.length; img.style.opacity = 1; }, 100); }';
+      htmlContent += 'window.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") move(-1); if (e.key === "ArrowRight") move(1); if (e.key === "Escape") window.close(); });';
+      htmlContent += '<\/script></body></html>';
+      popup.document.write(htmlContent);
+      popup.document.close();
+    }
+  })();
+</script>
+
+<style>
+  @media (max-width: 768px) {
+    #dining-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    #prevPage, #nextPage { font-size: 50px; }
+  }
+  #prevPage:hover, #nextPage:hover { color: #333 !important; transform: scale(1.1); }
+</style>
+
+
+
+
+
+<style>
+  /* 도시락 섹션 */
+</style>
+
+<div class="container" style="padding: 10px 20px; max-width: 850px; margin: 0 auto;">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #a89277; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">JoEun House Lunch Box Service</span>
+    <h2 style="color: #a89277; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성을 담은 <span style="color: #a89277;">조은하우스</span> 도시락 서비스</h2>
+    <div style="width: 40px; height: 2px; background: #a89277; margin: 15px auto 0;"></div>
+  </div>
+
+  <div style="margin-bottom: 25px;">
+    <span style="display: inline-block; width: 30px; height: 1px; background: #2e4d3c; vertical-align: middle; opacity: 0.3;"></span>
+    <p style="display: inline-block; margin: 0 15px; font-family: 'Malgun Gothic', sans-serif; font-size: 17px; color: #2e4d3c; font-weight: 700; letter-spacing: -0.5px;">
+      "좋은 재료로 마음과 정성을 다해 매일 아침 준비합니다"
+    </p>
+    <span style="display: inline-block; width: 30px; height: 1px; background: #2e4d3c; vertical-align: middle; opacity: 0.3;"></span>
+  </div>
+
+  <div id="lunch-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 800px; margin-left: auto; margin-right: auto; transition: opacity 0.3s ease;">
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; gap: 80px;">
+    <button id="prevLunchPage" style="background: none; border: none; cursor: pointer; color: #2e4d3c; font-size: 70px; font-weight: 900; line-height: 1; padding: 0; transition: 0.3s; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.1));">❮</button>
+    <div style="text-align: center;">
+        <span id="lunchPageIndicator" style="font-family: 'Malgun Gothic', sans-serif; font-size: 1rem; color: #2e4d3c; font-weight: 700; letter-spacing: 2px;">1 / 2</span>
+    </div>
+    <button id="nextLunchPage" style="background: none; border: none; cursor: pointer; color: #2e4d3c; font-size: 70px; font-weight: 900; line-height: 1; padding: 0; transition: 0.3s; filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.1));">❯</button>
+  </div>
+
+  <div class="lunch-info" style="background: #fafafa; padding: 35px 30px; border-radius: 20px; text-align: left; margin-top: 40px; border: 1px solid #eee;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <div style="font-size: 28px; color: #2e4d3c; flex-shrink: 0; margin-top: 3px;"><i class="fas fa-utensils"></i></div>
+      <div>
+        <h3 style="color: #2e4d3c; font-size: 1.3rem; margin: 0 0 15px 0; font-weight: 700;">진심을 배달하는 현장 집밥 도시락</h3>
+        <p style="margin: 0 0 15px 0; color: #444; font-size: 1.05rem; line-height: 1.9; word-break: keep-all;">
+          먼 타지 현장에서 고생하시는 분들을 위해 <strong>신선한 식재료로 정갈하게 만든 든든한 한 끼</strong>를 약속합니다. 매일 다른 메뉴와 푸짐한 양으로 한결같은 정성을 다하기에, 많은 기업체가 수년째 믿고 함께하고 계십니다.
+        </p>
+
+        <div style="margin-bottom: 15px; padding: 12px; background-color: #f0f3f1; border-left: 3px solid #2e4d3c; font-size: 0.88rem; color: #666; line-height: 1.6;">
+          <span style="color: #2e4d3c; font-weight: 700;">[구성 안내]</span><br>
+          선택하신 패키지에 따라 밥, 국, 후식(과일)은 도시락 내에 함께 구성되거나 혹은 별도로 정갈하게 포장되어 제공될 수 있습니다.
+        </div>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <span style="background: white; border: 1px solid #ddd; padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; color: #666;"># 매일 바뀌는 일주일 식단</span>
+          <span style="background: #2e4d3c; padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; color: white;"># 수년째 이어지는 신뢰의 맛</span>
+          <span style="background: white; border: 1px solid #ddd; padding: 5px 12px; border-radius: 50px; font-size: 0.85rem; color: #666;"># 엄선된 식재료와 푸짐한 양</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  (function() {
+    // 1~8번 이미지 ID (기존 도시락 사진)
+    const page1Ids = [
+      '1nWmO-7raDg_Tyec3kchgbUMBFUL9S8Gl', '1C-lYDd5eO87kcqOUrZzP6v3Rgh2zSdov',
+      '1zYHLXt9v9BeSH0DkuhMA8qsQGNDTcr8O', '1QI7X3I8TaRYeRPMFBVPWN1h4zf8apblD',
+      '1s7lNUCcRvhoJTeB5bRFEpNSRDuK7nfxN', '1-gRggMoImYLlklMPET_dhONxl-khNIhX',
+      '1UPgYHGdP6mWN8ldbd7MMWujNJ0pLt93a', '1moNkr4JcZT4FcKc6QazXXLjXPA4F4nvg'
+    ];
+
+    // 9~16번 이미지 ID (새로 주신 구글 링크 반영)
+    const page2Ids = [
+      '129q-vC9Y9zPgftJmKslJ6WLoLAdCJPxy', 
+      '1MYY_umDTJYBIhHIGgdRYMlGmJcFqh7CJ', 
+      '14kAoIQjZA7Ci2YB5fVXwfN93V2jMXbS1', 
+      '1BLA1ivF10n2s9QRfXppHOdoSVbD-SNd7', 
+      '1KrTcxS-9-51t9xPzjTRdUxj3v4A5Zkf8', 
+      '1aK5gtSf3MFvJXi8lFUJPLRbfww4tUCLV', 
+      '1VQGkxyf5Pa-GvsUiR2EuqEcYUnTEb_jg', 
+      '18vLh0Ve3ht3mfwLZc6CtNRiRboJI4HM3'
+    ];
+
+    const allLunchImageIds = [...page1Ids, ...page2Ids];
+    const lunchFullImages = allLunchImageIds.map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`);
+    
+    let currentLunchPage = 1;
+    const lunchGridContainer = document.getElementById('lunch-grid');
+    const lunchPageIndicator = document.getElementById('lunchPageIndicator');
+
+    function renderLunchGrid(page) {
+      lunchGridContainer.style.opacity = '0';
+      setTimeout(() => {
+        lunchGridContainer.innerHTML = '';
+        const start = (page - 1) * 8;
+        const currentIds = allLunchImageIds.slice(start, start + 8);
+
+        currentIds.forEach((id, index) => {
+          const actualIndex = start + index;
+          const img = document.createElement('img');
+          img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
+          img.style.cssText = "width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; cursor: pointer; border: 1px solid #eee; transition: transform 0.3s ease;";
+          img.onmouseover = () => img.style.transform = "scale(1.03)";
+          img.onmouseout = () => img.style.transform = "scale(1)";
+          img.onclick = () => popupLunchGallery(actualIndex);
+          lunchGridContainer.appendChild(img);
+        });
+        
+        lunchPageIndicator.innerText = `${page} / 2`;
+        lunchGridContainer.style.opacity = '1';
+        currentLunchPage = page;
+      }, 200);
+    }
+
+    document.getElementById('prevLunchPage').onclick = () => { renderLunchGrid(currentLunchPage === 1 ? 2 : 1); };
+    document.getElementById('nextLunchPage').onclick = () => { renderLunchGrid(currentLunchPage === 2 ? 1 : 2); };
+
+    renderLunchGrid(1); // 초기 렌더링
+
+    function popupLunchGallery(index) {
+      const w = window.innerWidth > 1000 ? 1000 : window.innerWidth;
+      const h = window.innerHeight > 900 ? 900 : window.innerHeight;
+      const left = (screen.width / 2) - (w / 2);
+      const top = (screen.height / 2) - (h / 2);
+      
+      const popup = window.open("", "LunchGallery", "width="+w+",height="+h+",top="+top+",left="+left+",resizable=yes");
+      
+      let htmlContent = '<html><head><title>Lunch Service Gallery</title><style>';
+      htmlContent += 'body { margin: 0; background: #000; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; font-family: sans-serif; }';
+      htmlContent += '.nav-btn { position: absolute; top: 50%; transform: translateY(-50%); font-size: 60px; color: rgba(255,255,255,0.4); cursor: pointer; user-select: none; padding: 30px; transition: 0.3s; z-index: 100; }';
+      htmlContent += '.nav-btn:hover { color: white; } #prev { left: 10px; } #next { right: 10px; }';
+      htmlContent += '#close { position: absolute; top: 25px; right: 25px; font-size: 45px; cursor: pointer; opacity: 0.6; z-index: 101; }';
+      htmlContent += '#mainImg { max-width: 90%; max-height: 80vh; object-fit: contain; border-radius: 4px; transition: opacity 0.2s; }';
+      htmlContent += '.counter { position: absolute; bottom: 30px; font-size: 16px; letter-spacing: 2px; color: rgba(255,255,255,0.6); }';
+      htmlContent += '</style></head><body>';
+      htmlContent += '<div id="close" onclick="window.close()">×</div>';
+      htmlContent += '<div id="prev" class="nav-btn" onclick="move(-1)">❮</div>';
+      htmlContent += '<img id="mainImg" src="' + lunchFullImages[index] + '" onclick="move(1)">';
+      htmlContent += '<div id="next" class="nav-btn" onclick="move(1)">❯</div>';
+      htmlContent += '<div class="counter" id="countDisplay">' + (index + 1) + ' / ' + lunchFullImages.length + '</div>';
+      htmlContent += '<script>';
+      htmlContent += 'let idx = ' + index + '; const imgArray = ' + JSON.stringify(lunchFullImages) + ';';
+      htmlContent += 'function move(step) { idx = (idx + step + imgArray.length) % imgArray.length; const img = document.getElementById("mainImg"); img.style.opacity = 0.5;';
+      htmlContent += 'setTimeout(() => { img.src = imgArray[idx]; document.getElementById("countDisplay").innerText = (idx + 1) + " / " + imgArray.length; img.style.opacity = 1; }, 100); }';
+      htmlContent += 'window.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") move(-1); if (e.key === "ArrowRight") move(1); if (e.key === "Escape") window.close(); });';
+      htmlContent += '<\/script></body></html>';
+      popup.document.write(htmlContent);
+      popup.document.close();
+    }
+  })();
+</script>
+
+<style>
+  @media (max-width: 600px) {
+    #lunch-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    #prevLunchPage, #nextLunchPage { font-size: 50px; } /* 모바일에서 화살표 크기 조정 */
+  }
+  #prevLunchPage:hover, #nextLunchPage:hover { color: #555 !important; transform: scale(1.1); }
+</style>
+
+
+
+
+
+<style>
+  /* 숙소 앨범 섹션 */
+</style>
+
+<div class="premium-album" style="max-width: 850px; margin: 20px auto; background: #ffffff; padding: 20px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.12); border: 1px solid #e0e0e0;">
+  <div style="text-align: center; margin-bottom: 30px; padding: 20px 0;">
+    <p style="font-family: 'Georgia', serif; font-style: italic; font-size: 14px; color: #a89277; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase;">The Art of Living</p>
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 32px; font-weight: 400; color: #2c2c2c; letter-spacing: 5px; margin: 0; text-transform: uppercase; position: relative; display: inline-block;">
+      JOEUN HOUSE <span style="display: block; font-family: 'Brush Script MT', cursive; font-size: 28px; color: #a89277; text-transform: capitalize; letter-spacing: 1px; margin-top: -10px; margin-left: 60px;">Gallery</span>
+    </h2>
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 15px;">
+      <div style="width: 40px; height: 1px; background: linear-gradient(to right, transparent, #a89277);"></div>
+      <div style="width: 6px; height: 6px; border: 1px solid #a89277; transform: rotate(45deg); margin: 0 15px;"></div>
+      <div style="width: 40px; height: 1px; background: linear-gradient(to left, transparent, #a89277);"></div>
+    </div>
+  </div>
+
+  <div id="gallery-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 10px;">
+  </div>
+
+<div style="padding: 50px 20px; text-align: center; background-color: #fdfcfb; border-radius: 20px; border: 1px solid #f2efeb; font-family: 'Malgun Gothic', sans-serif;">
+  
+  <div style="font-size: 28px; color: #a89277; margin-bottom: 20px;">
+    <i class="fas fa-heart"></i>
+  </div>
+
+  <p style="font-size: 1.25rem; color: #333; line-height: 1.6; margin-bottom: 25px; word-break: keep-all; font-weight: 600;">
+    "정해진 서비스의 틀보다 더 중요한 것은<br>
+    <span style="color: #a89277; border-bottom: 2px solid #e0d8cf; padding-bottom: 2px;">타지에서 느끼는 당신의 편안함입니다.</span>"
+  </p>
+  
+  <div style="width: 60px; height: 2px; background: #a89277; margin: 0 auto 30px;"></div>
+  
+  <p style="font-size: 1rem; color: #555; line-height: 1.9; margin: 0 auto; max-width: 700px; word-break: keep-all;">
+    조은하우스는 단순히 머무는 공간을 넘어, <br>
+    <strong>정성스러운 집밥과 아늑한 휴식</strong>이 조화를 이루는 따뜻한 안식처입니다. <br><br>
+    
+    식단 구성부터 생활 환경까지, 고객님의 필요를 가족처럼 세심하게 살핍니다. <br>
+    불편함 없는 멕시코 생활을 위해 <strong>진심을 다해 조율해 드릴 것을 약속하오니</strong>, <br>
+    언제든 편안하게 마음을 나누어 주세요.
+  </p>
+
+  <div style="margin-top: 30px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <span style="font-size: 0.85rem; color: #888; background: white; padding: 6px 15px; border-radius: 50px; border: 1px solid #eee;">#후리끼야_최고의_안식처</span>
+    <span style="font-size: 0.85rem; color: #888; background: white; padding: 6px 15px; border-radius: 50px; border: 1px solid #eee;">#정성담긴_한식</span>
+    <span style="font-size: 0.85rem; color: #888; background: white; padding: 6px 15px; border-radius: 50px; border: 1px solid #eee;">#가장_편안한_체류</span>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // 갤러리 이미지 ID 배열
+    const galleryIds = [
+      '1tD3iiek1D0sqM2N7kYyI_7oHzq2gB-68', '1z99rE9BfXVGoTKnDwLjIB4nf23K-YJEi',
+      '1FXKX7PdZKOqrrplX_GmXLYr3APRdL2dB', '1RtHZJFJ7dlZcpWSKsqg2HjwvUgrAORC7',
+      '1DOiGTwwlhZQooyj_sL4uhEE63t8Lggp7', '1mnKDtzK5gZuXExNvV3w1EAa2BxrskmFV',
+      '1KgBYILU7LNUqGAs1HT6theuW_xo9fSCT', '1ksZD6PvrMGXTHn2juvMk6kgcqH8dzR5-'
+    ];
+
+    const galleryFullImages = galleryIds.map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`);
+    const gridContainer = document.getElementById('gallery-grid');
+
+    // 그리드 생성
+    galleryIds.forEach((id, index) => {
+      const img = document.createElement('img');
+      img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
+      img.style.cssText = "width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px; cursor: pointer; border: 1px solid #eee; transition: transform 0.3s ease;";
+      
+      img.onmouseover = () => img.style.transform = "scale(1.03)";
+      img.onmouseout = () => img.style.transform = "scale(1)";
+      img.onclick = () => popupGallery(index);
+      
+      gridContainer.appendChild(img);
+    });
+
+    // 팝업 함수
+    function popupGallery(index) {
+      const w = window.innerWidth > 1000 ? 1000 : window.innerWidth;
+      const h = window.innerHeight > 900 ? 900 : window.innerHeight;
+      const left = (screen.width / 2) - (w / 2);
+      const top = (screen.height / 2) - (h / 2);
+      
+      const popup = window.open("", "JoeunGallery", "width="+w+",height="+h+",top="+top+",left="+left+",resizable=yes");
+      
+      let htmlContent = '<html><head><title>Joeun House Gallery</title><style>';
+      htmlContent += 'body { margin: 0; background: #000; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; font-family: sans-serif; }';
+      htmlContent += '.nav-btn { position: absolute; top: 50%; transform: translateY(-50%); font-size: 60px; color: rgba(255,255,255,0.4); cursor: pointer; user-select: none; padding: 30px; transition: 0.3s; z-index: 100; }';
+      htmlContent += '.nav-btn:hover { color: white; } #prev { left: 10px; } #next { right: 10px; }';
+      htmlContent += '#close { position: absolute; top: 25px; right: 25px; font-size: 45px; cursor: pointer; opacity: 0.6; z-index: 101; }';
+      htmlContent += '#mainImg { max-width: 90%; max-height: 80vh; object-fit: contain; border-radius: 4px; transition: opacity 0.2s; }';
+      htmlContent += '.counter { position: absolute; bottom: 30px; font-size: 16px; letter-spacing: 2px; color: rgba(255,255,255,0.6); }';
+      htmlContent += '</style></head><body>';
+      htmlContent += '<div id="close" onclick="window.close()">×</div>';
+      htmlContent += '<div id="prev" class="nav-btn" onclick="move(-1)">❮</div>';
+      htmlContent += '<img id="mainImg" src="' + galleryFullImages[index] + '" onclick="move(1)">';
+      htmlContent += '<div id="next" class="nav-btn" onclick="move(1)">❯</div>';
+      htmlContent += '<div class="counter" id="countDisplay">' + (index + 1) + ' / ' + galleryFullImages.length + '</div>';
+      htmlContent += '<script>';
+      htmlContent += 'let idx = ' + index + ';';
+      htmlContent += 'const imgArray = ' + JSON.stringify(galleryFullImages) + ';';
+      htmlContent += 'function move(step) {';
+      htmlContent += '  idx = (idx + step + imgArray.length) % imgArray.length;';
+      htmlContent += '  const img = document.getElementById("mainImg");';
+      htmlContent += '  img.style.opacity = 0.5;';
+      htmlContent += '  setTimeout(() => {';
+      htmlContent += '    img.src = imgArray[idx];';
+      htmlContent += '    document.getElementById("countDisplay").innerText = (idx + 1) + " / " + imgArray.length;';
+      htmlContent += '    img.style.opacity = 1;';
+      htmlContent += '  }, 100);';
+      htmlContent += '}';
+      htmlContent += 'window.addEventListener("keydown", (e) => {';
+      htmlContent += '  if (e.key === "ArrowLeft") move(-1);';
+      htmlContent += '  if (e.key === "ArrowRight") move(1);';
+      htmlContent += '  if (e.key === "Escape") window.close();';
+      htmlContent += '});';
+      htmlContent += '<\/script></body></html>';
+
+      popup.document.write(htmlContent);
+      popup.document.close();
+    }
+  })();
+</script>
+
+<style>
+  @media (max-width: 600px) {
+    #gallery-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+</style>
+
+
+  <style>
+  /* 카카오 및 왓츠앱 섹션 스타일 */
+  .luxury-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .luxury-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<div class="btn-group" style="display: flex; gap: 15px; justify-content: center; margin: 30px 0; flex-wrap: wrap; position: relative; align-items: center;">
+  <a href="https://wa.me/5213316995321" target="_blank" class="luxury-btn whatsapp" style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 240px; height: 55px; border-radius: 50px; color: white; font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); box-sizing: border-box;">
+    <i class="fab fa-whatsapp" style="margin-right: 12px; font-size: 1.5rem; line-height: 1;"></i>
+    <span>WhatsApp 상담</span>
+  </a>
+  
+  <div onclick="simpleCopy('seongsikin')" class="luxury-btn kakao" style="display: flex; align-items: center; justify-content: center; cursor: pointer; width: 240px; height: 55px; border-radius: 50px; color: #3C1E1E; font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #FEE500 0%, #FADA00 100%); position: relative; box-sizing: border-box;">
+    <i class="fas fa-comment" style="margin-right: 12px; font-size: 1.3rem; line-height: 1;"></i>
+    <span>카톡 ID: seongsikin</span>
+
+    <div id="simple-toast" style="display: none; position: absolute; top: -50px; left: 50%; transform: translateX(-50%); background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 9999;">
+      KAKAO ID COPIED!
+    </div>
+  </div>
+</div>
+
+<script>
+function simpleCopy(text) {
+  var storage = document.createElement('textarea');
+  storage.value = text;
+  document.body.appendChild(storage);
+  storage.select();
+  document.execCommand('copy');
+  document.body.removeChild(storage);
+
+  var msg = document.getElementById("simple-toast");
+  msg.style.display = "block";
+  
+  setTimeout(function() {
+    msg.style.display = "none";
+  }, 1500);
+}
+</script>
+
+<div class="footer-section" style="max-width: 850px; margin: 0 auto; text-align: center; padding: 40px 20px 20px; border-top: 1px solid #eee;">
+    <div style="line-height: 1.8; color: #777;">
+      <h3 style="color: #333; font-size: 18px; letter-spacing: 1px; margin-bottom: 15px; font-weight: 600;">
+        JOEUN House <span style="font-weight: 400; font-size: 16px; color: #888;">(조은하우스)</span>
+      </h3>
+      <div style="font-size: 13px; letter-spacing: 0.5px;">
+        <span style="display: inline-block; margin: 0 5px;">대표: 인성식 (Seongsik In)</span>
+        <br>
+        <span style="display: inline-block; margin: 0 5px;">위치: Juriquilla, Queretaro, Mexico</span>
+        <br>
+        <span style="display: inline-block; margin: 0 5px;">Email: seongsikin@gmail.com</span>    
+      </div>
+      <p style="font-size: 11px; color: #bbb; margin-top: 25px; text-transform: uppercase; letter-spacing: 1px;">
+        &copy; JOEUN HOUSE. All Rights Reserved.
+      </p>
+    </div>
+</div>
+
+
+<div style="display: none;">
+    <a href="https://blog.naver.com/joeunhouse-queretaro/224155377439" rel="nofollow">께레따로 하숙 조은하우스 공식 블로그</a>
+</div>
+  
+</body>
+</html>

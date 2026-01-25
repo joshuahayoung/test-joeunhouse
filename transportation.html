@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG80SWQYC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GEG80SWQYC');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>께레따로 하숙 조은하우스 | 멕시코 께레따로 한인 하숙 & 도시락 배달</title>
+  <meta name="description" content="멕시코 께레따로 후리키야 위치. 정갈한 한국 가정식 식사, 쾌적한 객실, 기업체 단체 도시락 배달 전문. 께레따로 한인 하숙의 중심 조은하우스입니다.">
+  <meta name="keywords" content="께레따로 하숙, 께레따로 한인민박, 께레따로 한국인, 멕시코 께레따로 게스트하우스, 께레따로 한국식당, 께레따로 도시락, 후리키야 하숙, Querétaro Korean House">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="께레따로 조은하우스 - 내 집 같은 편안한 하숙">
+  <meta property="og:description" content="정성 가득한 집밥과 안락한 공간. 께레따로 출장자 및 장기 체류자 환영.">
+  <meta property="og:image" content="https://drive.google.com/thumbnail?id=1SrILqGGJFlE4cME_ISgmTCB5PwBDk3GK&sz=w1200">
+  <meta property="og:url" content="https://www.joeunhouse.com">
+
+  <link rel="canonical" href="https://www.joeunhouse.com">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/jpeg" href="images/Logo-solo-Joeun-house-2.jpg">
+  <link rel="shortcut icon" href="images/Logo-solo-Joeun-house-2.jpg" type="image/jpg">
+  <link rel="apple-touch-icon" href="images/Logo-solo-Joeun-house-2.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+ <style>
+    /* 1. 기본 설정 및 상단 헤더 (패턴 유지) */
+    html, body {
+      margin: 0; padding: 0; width: 100%; overflow-x: hidden; 
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    * { box-sizing: border-box; }
+
+    .sticky-top {
+      position: sticky; top: 0; z-index: 1000; width: 100%;
+      background: #fcfaf3; /* 로고 바탕색에 맞춘 미색 */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .top-bar {
+      background-color: #806600; color: white; text-align: center;
+      padding: 12px 0; font-size: 13px; /* 11px에서 13px로 키움 */
+      font-family: 'Oswald', sans-serif; letter-spacing: 2px; /* 1.5px에서 2px로 넓힘 */
+      font-weight: 400;
+    }
+    .header-wrapper {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 40px; height: 100px; /* 90px에서 100px로 키움 */
+    }
+    .logo-area { display: flex; align-items: center; text-decoration: none; color: #333; }
+    .logo-img { height: 60px; width: auto; display: block; }
+    .logo-text { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; margin-left: 12px; }
+
+    .nav-links { display: flex; gap: 10px; align-items: center; }
+    .nav-links .close-menu, .nav-links .mobile-menu-logo { display: none; }
+    
+    .nav-links a {
+      text-decoration: none; color: #444; 
+      transition: 0.3s; padding: 8px 15px; border-radius: 6px;
+      display: flex; flex-direction: column; align-items: center; line-height: 1.2;
+    }
+    .nav-links a .en { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; } /* 14px에서 16px로 키움 */
+    .nav-links a .ko { font-size: 12px; font-weight: 400; margin-top: 2px; opacity: 0.7; } /* 11px에서 12px로 키움 */
+    .nav-links a.active { background-color: #806600; color: #fff; }
+    .nav-links a.active .ko { opacity: 1; }
+    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #a89277; }
+
+    .menu-toggle { display: none; font-size: 30px; cursor: pointer; background: none; border: none; color: #a89277; }
+
+    @media (max-width: 1024px) {
+      .header-wrapper { padding: 0 20px; height: 85px; justify-content: flex-start; gap: 15px; }
+      .menu-toggle { display: block; order: 1; } 
+      .logo-area { order: 2; } 
+      .logo-text { display: none; } 
+      .logo-img { height: 50px; }
+      .nav-links {
+        position: fixed; top: 0; left: -100%; width: 270px; height: 100vh;
+        background: #fcfaf3 !important;
+        flex-direction: column; padding: 40px 25px; transition: 0.3s; z-index: 2000;
+        box-shadow: 10px 0 20px rgba(0,0,0,0.1); align-items: flex-start;
+      }
+      .nav-links.active { left: 0; }
+      .nav-links .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #a89277; cursor: pointer; }
+      .nav-links .mobile-menu-logo { display: block; margin-bottom: 25px; width: 100%; text-align: left; }
+      .nav-links .mobile-menu-logo img { width: 80px; height: auto; display: block; }
+      .nav-links a { width: 100%; flex-direction: row; gap: 10px; padding: 15px; border-bottom: 1px solid #e0ddd5; align-items: center; }
+    }
+
+    /* 2. 본문 서비스 스타일 */
+    .service-container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      overflow: hidden;
+    }
+    .section-title { text-align: center; margin-bottom: 50px; }
+    .section-title h2 { color: #806600; font-size: 1.8rem; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.5px; }
+    .section-title p { font-size: 1.1rem; color: #666; line-height: 1.6; word-break: keep-all; }
+
+    .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 50px; }
+    .service-card { background-color: #fcfcfc; border: 1px solid #eee; padding: 30px; border-radius: 12px; transition: all 0.3s ease; }
+    .service-card:hover { border-color: #a89277; transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+    .service-card h3 { color: #a89277; font-size: 1.25rem; margin-top: 0; display: flex; align-items: center; gap: 12px; font-weight: 700; }
+    .service-card h3 i { font-size: 1.5rem; }
+    .service-card p { font-size: 0.95rem; color: #666; margin-bottom: 0; line-height: 1.7; word-break: keep-all; }
+
+    #fixedTopBtn {
+      position: fixed !important; bottom: 25px !important; right: 20px !important; 
+      width: 50px; height: 50px; background-color: #a89277; color: #fff; border: none; border-radius: 50%;
+      font-weight: 900; font-size: 12px; z-index: 999999 !important; cursor: pointer; display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+<body>
+  <div class="sticky-top">
+    <div class="top-bar">멕시코 께레따로 후리끼야 | JOEUN HOUSE 오피셜 홈</div>
+    <header class="header-wrapper">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      
+      <a href="index.html" class="logo-area">
+        <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House" class="logo-img"> 
+        <span class="logo-text">Joeun House</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <span class="close-menu" onclick="toggleMenu()">✕</span>
+        <div class="mobile-menu-logo"><img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House"></div>
+        <a href="index.html"><span class="en">HOME</span><span class="ko">홈</span></a>
+        <a href="accommodations.html"><span class="en">Accommodations</span><span class="ko">객실안내</span></a>
+        <a href="dining-lunch.html"><span class="en">Dining & Lunch</span><span class="ko">식사/도시락</span></a>
+        <a href="transportation.html" class="active"><span class="en">Transportation</span><span class="ko">교통/서비스</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="ko">예약/문의</span></a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="service-container">
+    <div class="section-title">
+      <h2>비즈니스를 위한 맞춤형 서비스</h2>
+      <p>업무에만 집중하실 수 있도록 안전하고 편리한 이동 서비스를 제공합니다.</p>
+    </div>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3><i class="fas fa-car-side"></i> 출퇴근 지원</h3>
+        <p>삼성, LG 및 인근 산업단지(Park)로의 정기적인 출퇴근 차량을 운행합니다. 숙련된 기사가 안전하게 모십니다.</p>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-plane-arrival"></i> 공항 픽업/샌딩</h3>
+        <p>께레따로(QRO) 공항 및 멕시코시티(MEX) 공항 이용 시, 편안하고 안전한 전용 차량 픽업 서비스를 제공합니다.</p>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-map-marked-alt"></i> 맞춤형 배차</h3>
+        <p>주말 관광이나 외부 업무 미팅 시에도 유동적으로 전용 차량과 기사를 지원해 드립니다.</p>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-concierge-bell"></i> 비즈니스 케어</h3>
+        <p>현지 통역 지원, 병원 안내 등 멕시코 생활 전반에 필요한 모든 편의를 정성껏 도와드립니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-visual-section" style="text-align: center; margin-top: 60px; max-width: 850px; margin-left: auto; margin-right: auto; padding: 0 20px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
+    <div style="margin-bottom: 35px;">
+      <div style="display: inline-block; padding: 5px 15px; background: #f4f1ed; border-radius: 5px; margin-bottom: 15px;">
+        <span style="color: #a89277; font-size: 0.85rem; font-weight: 700; letter-spacing: 2px;">TRANSPORTATION SERVICE</span>
+      </div>
+      <h2 style="font-size: 26px; color: #333; font-weight: 800; letter-spacing: -1px; margin: 0 0 10px 0;">차량 및 서비스 안내</h2>
+      <div style="width: 50px; height: 3px; background: #a89277; margin: 0 auto; border-radius: 2px;"></div>
+    </div>
+
+    <div class="service-gallery" id="service-img-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 30px;">
+      <img src="https://drive.google.com/thumbnail?id=1hShq2gA_eThzKDAKDYq_d5tR7BVrx8Lv&sz=w800" alt="차량 서비스 1" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+      <img src="https://drive.google.com/thumbnail?id=1VhFZQpzwzpiMTWOCNkxcPERqp8ZygvMb&sz=w800" alt="차량 서비스 2" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+      <img src="https://drive.google.com/thumbnail?id=11wuzqhyVR3Pu00f9AGv--ucEUAODJB7V&sz=w800" alt="차량 서비스 3" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+      <img src="https://drive.google.com/thumbnail?id=1nGdPIIhRKeCwNVvv76O2hZPeonTwSnUz&sz=w800" alt="차량 서비스 4" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+      <img src="https://drive.google.com/thumbnail?id=1cPDhIAW6zzSxkiTcrQj4suw4unISQSNk&sz=w800" alt="차량 서비스 5" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+      <img src="https://drive.google.com/thumbnail?id=1lSYKMwsdDQIfaANgnCdY0quu1G0M_kC0&sz=w800" alt="차량 서비스 6" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; border: 1px solid #eee; transition: 0.3s;">
+    </div>
+  </div>
+
+  <div class="safety-notice-section" style="max-width: 850px; margin: 40px auto; padding: 0 20px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
+    <div class="notice-box" style="background: #ffffff; padding: 40px 30px; border-radius: 25px; text-align: left; border: 1px solid #e8e1d5; box-shadow: 0 15px 40px rgba(168, 146, 119, 0.1);">
+      <div class="notice-header" style="display: flex; gap: 20px; align-items: center; margin-bottom: 35px; padding-bottom: 25px; border-bottom: 1px solid #f0edeb;">
+        <div class="icon-shield" style="width: 60px; height: 60px; background: #a89277; border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 28px; box-shadow: 0 8px 15px rgba(168, 146, 119, 0.3); flex-shrink: 0;">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div>
+          <strong style="display: block; font-size: 1.25rem; color: #222; margin-bottom: 6px; font-weight: 800; letter-spacing: -0.5px;">"안전과 신뢰를 최우선으로 생각합니다"</strong>
+          <p style="margin: 0; color: #666; font-size: 0.95rem; line-height: 1.8; word-break: keep-all;">
+            JOEUN 하숙은 전용 차량과 숙련된 전담 운전 인력을 직접 운영하여<br>
+            <span style="color: #a89277; font-weight: 700;">타지에서의 치안 걱정 없는 안전한 이동</span>을 책임집니다.
+          </p>
+        </div>
+      </div>
+      <div class="check-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+        <div style="background: #fff5f4; padding: 18px 20px; border-radius: 12px; border: 1px solid #f9e6e4; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: #e74c3c; font-size: 18px;"></i>
+          <span style="font-size: 0.95rem; color: #333; letter-spacing: -0.3px;"><strong>전 차량 100% 상해보험</strong> 완비</span>
+        </div>
+        <div style="background: #faf9f7; padding: 18px 20px; border-radius: 12px; border: 1px solid #f0edeb; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: #a89277; font-size: 18px;"></i>
+          <span style="font-size: 0.95rem; color: #333; letter-spacing: -0.3px;">정기적인 <strong>차량 안전 점검</strong> 실시</span>
+        </div>
+        <div style="background: #faf9f7; padding: 18px 20px; border-radius: 12px; border: 1px solid #f0edeb; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: #a89277; font-size: 18px;"></i>
+          <span style="font-size: 0.95rem; color: #333; letter-spacing: -0.3px;">인원별 <strong>다양한 차종</strong> 맞춤 배차</span>
+        </div>
+        <div style="background: #faf9f7; padding: 18px 20px; border-radius: 12px; border: 1px solid #f0edeb; display: flex; align-items: center; gap: 12px;">
+          <i class="fas fa-check-circle" style="color: #a89277; font-size: 18px;"></i>
+          <span style="font-size: 0.95rem; color: #333; letter-spacing: -0.3px;">목적지별 <strong>합리적인 이용 비용</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-footer-wrapper" style="max-width: 850px; margin: 0 auto; padding: 0 20px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
+    <div style="margin-top: 30px; text-align: center; border-top: 1px solid #f0edeb; padding-top: 20px;">
+      <p style="color: #999; font-size: 0.88rem; margin: 0; font-style: italic; letter-spacing: -0.2px;">
+        ※ 차량 종류 및 구체적인 비용은 인원과 일정에 따라 맞춤 상담이 가능합니다.
+      </p>
+    </div>
+
+    <div class="btn-group" style="display: flex; gap: 15px; justify-content: center; margin: 30px 0; flex-wrap: wrap; position: relative;">
+      <a href="https://wa.me/5213316995321" target="_blank" style="display: flex; align-items: center; text-decoration: none; padding: 15px 35px; border-radius: 50px; color: white; font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); transition: transform 0.3s ease;">
+        <i class="fab fa-whatsapp" style="margin-right: 12px; font-size: 1.5rem;"></i>
+        <span>WhatsApp 상담</span>
+      </a>
+      <div onclick="simpleCopy('seongsikin')" style="display: flex; align-items: center; cursor: pointer; padding: 15px 35px; border-radius: 50px; color: #3C1E1E; font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #FEE500 0%, #FADA00 100%); position: relative; transition: transform 0.3s ease;">
+        <i class="fas fa-comment" style="margin-right: 12px; font-size: 1.3rem;"></i>
+        <span>카톡 ID: seongsikin</span>
+        <div id="simple-toast" style="display: none; position: absolute; top: -45px; left: 50%; transform: translateX(-50%); background-color: #333; color: white; padding: 8px 15px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 9999;">KAKAO ID COPIED!</div>
+      </div>
+    </div>
+
+    <div class="footer-section" style="padding: 50px 0; border-top: 1px solid #eee; background: #fff; text-align: center;">
+      <div style="line-height: 1.8; color: #777;">
+        <h3 style="color: #333; font-size: 19px; letter-spacing: 1px; margin: 0 0 20px 0; font-weight: 700; font-family: 'Malgun Gothic', sans-serif;">
+          JOEUN House <span style="font-weight: 400; font-size: 16px; color: #a89277; margin-left: 5px;">| 조은하우스</span>
+        </h3>
+        <div style="font-size: 13.5px; letter-spacing: 0.2px; font-family: 'Malgun Gothic', sans-serif; display: inline-block; text-align: center;">
+          <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">대표:</span>인성식 (Seongsik In)</div>
+          <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">위치:</span>Juriquilla, Queretaro, Mexico</div>
+          <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">Email:</span><span style="color: #a89277;">seongsikin@gmail.com</span></div>
+        </div>
+        <p style="font-size: 11px; color: #ccc; margin-top: 35px; text-transform: uppercase; letter-spacing: 2px;">&copy; JOEUN HOUSE. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <button id="fixedTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">TOP</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    window.onscroll = function() {
+      var topBtn = document.getElementById("fixedTopBtn");
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop > 300) { topBtn.style.display = "block"; } else { topBtn.style.display = "none"; }
+    };
+
+    if (typeof simpleCopy !== 'function') {
+      function simpleCopy(text) {
+        var storage = document.createElement('textarea');
+        storage.value = text; document.body.appendChild(storage);
+        storage.select(); document.execCommand('copy');
+        document.body.removeChild(storage);
+        var msg = document.getElementById("simple-toast");
+        if (msg) { msg.style.display = "block"; setTimeout(function() { msg.style.display = "none"; }, 1500); }
+      }
+    }
+  </script>
+
+  <div style="display: none;">
+    <a href="https://blog.naver.com/joeunhouse-queretaro/224155377439" rel="nofollow">께레따로 하숙 조은하우스 공식 블로그</a>
+  </div>
+</body>
+</html>
