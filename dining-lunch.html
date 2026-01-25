@@ -31,7 +31,7 @@
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
- <style>
+  <style>
     /* 1. 기본 설정 */
     html, body {
       margin: 0; padding: 0; width: 100%; overflow-x: hidden; 
@@ -111,102 +111,87 @@
     /* [TOP 버튼] */
     #fixedTopBtn {
       position: fixed !important; bottom: 25px !important; right: 20px !important;
-      width: 50px !important; height: 50px !important;
-      background-color: #806600 !important; color: #fff !important;
-      border: none !important; border-radius: 50% !important;
-      font-weight: 900 !important; font-size: 12px !important;
-      z-index: 9999 !important; cursor: pointer !important;
+      width: 50px; height: 50px;
+      background-color: #806600; color: #fff;
+      border: none; border-radius: 50%;
+      font-weight: 900; font-size: 12px;
+      z-index: 9999 !important; cursor: pointer;
       display: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
-   <style>
-  /* [모바일 스타일 수정본] */
-  @media (max-width: 1024px) {
-    .header-wrapper { 
-      padding: 0 20px; 
-      height: 85px; 
-      display: flex; 
-      align-items: center; 
-      justify-content: flex-start !important; 
-      gap: 20px; 
-    }
-    .menu-toggle { display: block !important; order: 1; } 
-    .logo-area { order: 2; display: flex !important; align-items: center; } 
-    .logo-text { display: none; } 
-    .logo-img { height: 50px; }
+    /* [모바일 스타일] */
+    @media (max-width: 1024px) {
+      .header-wrapper { padding: 0 20px; height: 85px; justify-content: flex-start; gap: 15px; }
+      .menu-toggle { display: block; order: 1; } 
+      .logo-area { order: 2; } 
+      .logo-text { display: none; } 
+      .logo-img { height: 50px; }
 
-    .nav-links {
-      position: fixed; top: 0; left: -100%; 
-      width: 260px; height: 100vh;
-      background: #fcfaf3 !important; /* 조은하우스 전용 배경색 */
-      flex-direction: column;
-      padding: 50px 25px; transition: 0.3s; z-index: 2000;
-      box-shadow: 10px 0 20px rgba(0,0,0,0.1);
-      align-items: center; gap: 10px;
-      display: flex !important;
+      .nav-links {
+        position: fixed; top: 0; left: -100%; 
+        width: 270px; height: 100vh;
+        background: #fcfaf3 !important;
+        flex-direction: column; padding: 40px 25px; transition: 0.3s; z-index: 2000;
+        box-shadow: 10px 0 20px rgba(0,0,0,0.1);
+        align-items: flex-start;
+      }
+      .nav-links.active { left: 0; }
+      .nav-links .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #806600; cursor: pointer; }
+      
+      .nav-links .mobile-menu-logo { display: block; margin-bottom: 25px; width: 100%; text-align: left; }
+      .nav-links .mobile-menu-logo img { width: 80px; height: auto; display: block; }
+      
+      .nav-links a { width: 100%; flex-direction: row; gap: 10px; padding: 15px; border-bottom: 1px solid #e0ddd5; align-items: center; }
+      .nav-links a span.ko { font-size: 14px; }
+      
+      .features { grid-template-columns: 1fr; gap: 20px; }
+      .dining-intro { padding: 50px 20px; }
+      .dining-intro h2 { font-size: 1.8rem; }
     }
-    .nav-links.active { left: 0; }
+  </style>
+</head>
 
-    /* 닫기 버튼(X) 설정 */
-    .close-menu { 
-      display: block !important; 
-      position: absolute; 
-      top: 20px; 
-      right: 20px; 
-      font-size: 24px; 
-      color: #806600; /* 골드 포인트 */
-      cursor: pointer;
-    }
-    
-    /* 모바일 내부 로고 설정 */
-    .mobile-menu-logo { 
-      display: block !important; 
-      margin-bottom: 30px; 
-      text-align: center;
-      width: 100%;
-    }
-    .mobile-menu-logo img { height: 50px; }
+<body>
+  <div class="sticky-top">
+    <div class="top-bar">멕시코 께레따로 후리끼야 | JOEUN HOUSE 오피셜 홈</div>
+    <header class="header-wrapper">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <a href="index.html" class="logo-area">
+        <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House" class="logo-img"> 
+        <span class="logo-text">Joeun House</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <span class="close-menu" onclick="toggleMenu()">✕</span>
+        <div class="mobile-menu-logo">
+          <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House">
+        </div>
+        <a href="index.html"><span class="en">HOME</span><span class="ko">홈</span></a>
+        <a href="accommodations.html"><span class="en">Accommodations</span><span class="ko">객실안내</span></a>
+        <a href="dining-lunch.html" class="active"><span class="en">Dining & Lunch</span><span class="ko">식사/도시락</span></a>
+        <a href="transportation.html"><span class="en">Transportation</span><span class="ko">교통/서비스</span></a>
+        <a href="contact.html"><span class="en">Contact</span><span class="ko">예약/문의</span></a>
+      </nav>
+    </header>
+  </div>
 
-    .nav-links a { 
-      width: 100%; 
-      display: flex; 
-      flex-direction: row; 
-      gap: 10px; 
-      padding: 15px; 
-      border-bottom: 1px solid #e0ddd5; 
-      justify-content: center; 
-      text-decoration: none;
-      color: #333;
-    }
-    .nav-links a span.ko { font-size: 14px; }
-    
-    .features { grid-template-columns: 1fr; gap: 20px; }
-    .dining-intro { padding: 50px 20px; }
-    .dining-intro h2 { font-size: 1.8rem; }
-  }
-</style>
+  <button id="fixedTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">TOP</button>
 
-<div class="sticky-top">
-  <div class="top-bar">멕시코 께레따로 후리끼야 | JOEUN HOUSE 오피셜 홈</div>
-  <header class="header-wrapper">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <a href="index.html" class="logo-area">
-      <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House" class="logo-img"> 
-      <span class="logo-text">Joeun House</span>
-    </a>
-    <nav class="nav-links" id="navLinks">
-      <span class="close-menu" onclick="toggleMenu()">✕</span>
-      <div class="mobile-menu-logo">
-        <img src="images/Logo-Joeun-house-1.jpg" alt="Joeun House">
-      </div>
-      <a href="index.html"><span class="en">HOME</span><span class="ko">홈</span></a>
-      <a href="accommodations.html"><span class="en">Accommodations</span><span class="ko">객실안내</span></a>
-      <a href="dining-lunch.html" class="active"><span class="en">Dining & Lunch</span><span class="ko">식사/도시락</span></a>
-      <a href="transportation.html"><span class="en">Transportation</span><span class="ko">교통/서비스</span></a>
-      <a href="contact.html"><span class="en">Contact</span><span class="ko">예약/문의</span></a>
-    </nav>
-  </header>
-</div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    window.onscroll = function() {
+      var topBtn = document.getElementById("fixedTopBtn");
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+  </script>
+
 
   <div class="dining-intro">
     <h2>따뜻한 정성이 담긴 JOEUN 다이닝</h2>
