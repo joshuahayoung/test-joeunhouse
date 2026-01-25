@@ -75,11 +75,11 @@
     .nav-links a .ko { font-size: 12px; font-weight: 400; margin-top: 2px; opacity: 0.7; }
     .nav-links a.active { background-color: #806600; color: #fff; }
     .nav-links a.active .ko { opacity: 1; }
-    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #a89277; }
+    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #806600; }
 
     .menu-toggle {
       display: none; font-size: 30px; cursor: pointer;
-      background: none; border: none; color: #a89277;
+      background: none; border: none; color: #806600;
     }
 
     /* [다이닝 상단 디자인 섹션] */
@@ -104,15 +104,15 @@
     }
     .feature-item:hover { transform: translateY(-10px); }
 
-    .icon-box { font-size: 45px; color: #a89277; margin-bottom: 25px; opacity: 0.8; }
-    .feature-item h3 { font-size: 1.35rem; color: #a89277; margin-bottom: 15px; font-weight: 600; }
+    .icon-box { font-size: 45px; color: #806600; margin-bottom: 25px; opacity: 0.8; }
+    .feature-item h3 { font-size: 1.35rem; color: #806600; margin-bottom: 15px; font-weight: 600; }
     .feature-item p { font-size: 1rem; color: #777; line-height: 1.7; word-break: keep-all; margin: 0; }
 
     /* [TOP 버튼] */
     #fixedTopBtn {
       position: fixed !important; bottom: 25px !important; right: 20px !important;
       width: 50px !important; height: 50px !important;
-      background-color: #a89277 !important; color: #fff !important;
+      background-color: #806600 !important; color: #fff !important;
       border: none !important; border-radius: 50% !important;
       font-weight: 900 !important; font-size: 12px !important;
       z-index: 9999 !important; cursor: pointer !important;
@@ -137,7 +137,7 @@
       }
       .nav-links.active { left: 0; }
       .nav-links a { width: 100%; flex-direction: row; gap: 10px; padding: 15px; border-bottom: 1px solid #e0ddd5; justify-content: center; }
-      .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #a89277; }
+      .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #806600; }
       
       .features { grid-template-columns: 1fr; gap: 20px; }
       .dining-intro { padding: 50px 20px; }
@@ -205,27 +205,29 @@
   }
 </style>
 
+  
+
 <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 20px; text-align: center;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #a89277; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Authentic Korean Taste</span>
-    <h2 style="color: #a89277; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성으로 차린 따뜻한 집밥</h2>
-    <div style="width: 40px; height: 2px; background: #a89277; margin: 15px auto 0;"></div>
+    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #806600; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">Authentic Korean Taste</span>
+    <h2 style="color: #806600; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성으로 차린 따뜻한 집밥</h2>
+    <div style="width: 40px; height: 2px; background: #806600; margin: 15px auto 0;"></div>
   </div>
 
   <div id="dining-grid"></div>
 
   <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; gap: 80px;">
-    <button id="prevPage" style="background: none; border: none; cursor: pointer; color: #a89277; font-size: 70px; font-weight: 900;">❮</button>
-    <span id="pageIndicator" style="font-family: 'Malgun Gothic', sans-serif; font-size: 1rem; color: #a89277; font-weight: 700; letter-spacing: 2px;">1 / 2</span>
-    <button id="nextPage" style="background: none; border: none; cursor: pointer; color: #a89277; font-size: 70px; font-weight: 900;">❯</button>
+    <button id="prevPage" style="background: none; border: none; cursor: pointer; color: #806600; font-size: 70px; font-weight: 900;">❮</button>
+    <span id="pageIndicator" style="font-family: 'Malgun Gothic', sans-serif; font-size: 1rem; color: #806600; font-weight: 700; letter-spacing: 2px;">1 / 2</span>
+    <button id="nextPage" style="background: none; border: none; cursor: pointer; color: #806600; font-size: 70px; font-weight: 900;">❯</button>
   </div>
 </div>
 
 <div class="dining-info" style="background: #fafafa; padding: 35px 30px; border-radius: 20px; text-align: left; margin: 40px auto 0; border: 1px solid #eee; max-width: 850px;">
     <div style="display: flex; gap: 20px; align-items: flex-start;">
-      <div style="font-size: 28px; color: #a89277; flex-shrink: 0; margin-top: 3px;"><i class="fas fa-utensils"></i></div>
+      <div style="font-size: 28px; color: #806600; flex-shrink: 0; margin-top: 3px;"><i class="fas fa-utensils"></i></div>
       <div>
-        <h3 style="color: #a89277; font-size: 1.3rem; margin: 0 0 15px 0; font-weight: 700;">진심을 담아 준비하는 정통 한국 가정식</h3>
+        <h3 style="color: #806600; font-size: 1.3rem; margin: 0 0 15px 0; font-weight: 700;">진심을 담아 준비하는 정통 한국 가정식</h3>
         <p style="margin: 0; color: #444; font-size: 1.05rem; line-height: 1.9; word-break: keep-all;">
           멕시코 현지에서 한국의 맛을 지키기 위해 고집스럽게 노력해 온 <strong>실력 있는 요리사의 손길</strong>로 매일의 식탁을 채웁니다. 엄선된 최상급 식재료만을 사용하여 정성껏 준비한 아침 및 저녁 식사를 제공하며, 먼 타지 생활 속에서도 <strong>고향의 따뜻한 위로와 건강한 에너지</strong>를 얻으실 수 있도록 온 마음을 다합니다.
         </p>
@@ -235,9 +237,9 @@
   
 <div class="container" style="padding: 20px; max-width: 1000px; margin: 100px auto 0; text-align: center;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #a89277; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">JoEun House Lunch Box Service</span>
-    <h2 style="color: #a89277; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성을 담은 <span style="color: #a89277;">조은하우스</span> 도시락 서비스</h2>
-    <div style="width: 40px; height: 2px; background: #a89277; margin: 15px auto 0;"></div>
+    <span style="display: block; font-family: 'Times New Roman', serif; font-style: italic; color: #806600; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px;">JoEun House Lunch Box Service</span>
+    <h2 style="color: #806600; font-size: 1.6rem; font-weight: 700; margin: 0; font-family: 'Malgun Gothic', sans-serif;">정성을 담은 <span style="color: #806600;">조은하우스</span> 도시락 서비스</h2>
+    <div style="width: 40px; height: 2px; background: #806600; margin: 15px auto 0;"></div>
   </div>
 
   <div style="text-align: center; margin-bottom: 25px;">
@@ -269,13 +271,13 @@
 
     <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px;">
       <li style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 0.95rem;">
-        <span style="color: #a89277; font-weight: bold;">✔</span> 점심 및 저녁 정기 배달 가능 (후리키야 및 인근 지역)
+        <span style="color: #806600; font-weight: bold;">✔</span> 점심 및 저녁 정기 배달 가능 (후리키야 및 인근 지역)
       </li>
       <li style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 0.95rem;">
-        <span style="color: #a89277; font-weight: bold;">✔</span> 기업체 단체 주문 및 상황별 맞춤형 메뉴 상담
+        <span style="color: #806600; font-weight: bold;">✔</span> 기업체 단체 주문 및 상황별 맞춤형 메뉴 상담
       </li>
       <li style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 0.95rem;">
-        <span style="color: #a89277; font-weight: bold;">✔</span> 내 가족이 먹는다는 마음으로 철저한 위생 관리 준수
+        <span style="color: #806600; font-weight: bold;">✔</span> 내 가족이 먹는다는 마음으로 철저한 위생 관리 준수
       </li>
     </ul>
 
@@ -354,12 +356,12 @@
 
     <div class="footer-section" style="padding: 50px 20px; border-top: 1px solid #eee; background: #fff;">
       <h3 style="color: #333; font-size: 19px; letter-spacing: 1px; margin: 0 0 20px 0; font-weight: 700;">
-        JOEUN House <span style="font-weight: 400; font-size: 16px; color: #a89277; margin-left: 5px;">| 조은하우스</span>
+        JOEUN House <span style="font-weight: 400; font-size: 16px; color: #806600; margin-left: 5px;">| 조은하우스</span>
       </h3>
       <div style="font-size: 13.5px; color: #777; line-height: 1.8;">
         <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">대표:</span>인성식 (Seongsik In)</div>
         <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">위치:</span>Juriquilla, Queretaro, Mexico</div>
-        <div><span style="color: #333; font-weight: 700; margin-right: 8px;">Email:</span><span style="color: #a89277;">seongsikin@gmail.com</span></div>
+        <div><span style="color: #333; font-weight: 700; margin-right: 8px;">Email:</span><span style="color: #806600;">seongsikin@gmail.com</span></div>
       </div>
       <p style="font-size: 11px; color: #ccc; margin-top: 35px; text-transform: uppercase; letter-spacing: 2px;">&copy; JOEUN HOUSE. All Rights Reserved.</p>
     </div>
