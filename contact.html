@@ -69,9 +69,9 @@
     .nav-links a .en { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; } /* 14px에서 16px로 키움 */
     .nav-links a .ko { font-size: 12px; font-weight: 400; margin-top: 2px; opacity: 0.7; } /* 11px에서 12px로 키움 */
     .nav-links a.active { background-color: #806600; color: #fff; }
-    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #a89277; }
+    .nav-links a:hover:not(.active) { background-color: #f0ede5; color: #806600; }
 
-    .menu-toggle { display: none; font-size: 30px; cursor: pointer; background: none; border: none; color: #a89277; }
+    .menu-toggle { display: none; font-size: 30px; cursor: pointer; background: none; border: none; color: #806600; }
 
     @media (max-width: 1024px) {
       .header-wrapper { padding: 0 20px; height: 85px; justify-content: flex-start; gap: 15px; }
@@ -86,7 +86,7 @@
         box-shadow: 10px 0 20px rgba(0,0,0,0.1); align-items: flex-start;
       }
       .nav-links.active { left: 0; }
-      .nav-links .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #a89277; cursor: pointer; }
+      .nav-links .close-menu { display: block; position: absolute; top: 20px; right: 20px; font-size: 24px; color: #806600; cursor: pointer; }
       .nav-links .mobile-menu-logo { display: block; margin-bottom: 25px; width: 100%; text-align: left; }
       .nav-links .mobile-menu-logo img { width: 80px; height: auto; }
       .nav-links a { width: 100%; flex-direction: row; gap: 10px; padding: 15px; border-bottom: 1px solid #e0ddd5; align-items: center; }
@@ -98,15 +98,15 @@
     .section-title h2 { color: #806600; font-size: 1.8rem; font-weight: 700; margin-bottom: 15px; letter-spacing: -0.5px; }
     .section-title p { font-size: 1.1rem; color: #666; line-height: 1.6; word-break: keep-all; }
     .location-info { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px; }
-    .info-card { flex: 1; min-width: 280px; padding: 35px 30px; background-color: #f9f9f9; border-radius: 12px; border-top: 4px solid #a89277; text-align: center; transition: 0.3s; }
+    .info-card { flex: 1; min-width: 280px; padding: 35px 30px; background-color: #f9f9f9; border-radius: 12px; border-top: 4px solid #806600; text-align: center; transition: 0.3s; }
     .info-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-    .info-card i { font-size: 2.2rem; color: #a89277; margin-bottom: 20px; display: inline-block; }
+    .info-card i { font-size: 2.2rem; color: #806600; margin-bottom: 20px; display: inline-block; }
     .info-card h4 { margin-top: 0; color: #333; font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; }
     .info-card p { font-size: 0.95rem; color: #666; margin: 0; line-height: 1.7; word-break: keep-all; }
 
     #fixedTopBtn {
       position: fixed !important; bottom: 25px !important; right: 20px !important; 
-      width: 50px; height: 50px; background-color: #a89277; color: #fff; border: none; border-radius: 50%;
+      width: 50px; height: 50px; background-color: #806600; color: #fff; border: none; border-radius: 50%;
       font-weight: 900; font-size: 12px; z-index: 999999 !important; cursor: pointer; display: none;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
@@ -137,6 +137,7 @@
       </nav>
     </header>
   </div>
+  
 
   <div class="location-container">
     <div class="section-title">
@@ -161,16 +162,16 @@
   <div class="infra-section" style="margin: 60px 0; text-align: center; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
     <div class="infra-title" style="font-size: 1.35rem; color: #333; margin-bottom: 35px; font-weight: 700; letter-spacing: -0.5px;">차량 2~5분 거리의 생활 편의시설</div>
     <div class="infra-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 45px 0; max-width: 850px; margin: 0 auto;">
-      <div class="infra-item"><i class="fas fa-golf-ball-tee" style="font-size: 1.8rem; color: #a89277; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">명문 골프장</span><small style="color: #999; font-size: 0.82rem;">18홀/클럽하우스</small></div>
-      <div class="infra-item"><i class="fas fa-dumbbell" style="font-size: 1.8rem; color: #a89277; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">스포츠 센터</span><small style="color: #999; font-size: 0.82rem;">전문 센터 3-4곳</small></div>
-      <div class="infra-item"><i class="fas fa-hospital" style="font-size: 1.8rem; color: #a89277; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">대형 종합병원</span><small style="color: #999; font-size: 0.82rem;">응급실/전문진료</small></div>
-      <div class="infra-item"><i class="fas fa-store" style="font-size: 1.8rem; color: #a89277; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">멀티 플라자</span><small style="color: #999; font-size: 0.82rem;">모든 생활 서비스</small></div>
-      <div class="infra-item"><i class="fas fa-utensils" style="font-size: 1.8rem; color: #a89277; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">맛집/카페</span><small style="color: #999; font-size: 0.82rem;">호수변 레스토랑</small></div>
+      <div class="infra-item"><i class="fas fa-golf-ball-tee" style="font-size: 1.8rem; color: #806600; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">명문 골프장</span><small style="color: #999; font-size: 0.82rem;">18홀/클럽하우스</small></div>
+      <div class="infra-item"><i class="fas fa-dumbbell" style="font-size: 1.8rem; color: #806600; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">스포츠 센터</span><small style="color: #999; font-size: 0.82rem;">전문 센터 3-4곳</small></div>
+      <div class="infra-item"><i class="fas fa-hospital" style="font-size: 1.8rem; color: #806600; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">대형 종합병원</span><small style="color: #999; font-size: 0.82rem;">응급실/전문진료</small></div>
+      <div class="infra-item"><i class="fas fa-store" style="font-size: 1.8rem; color: #806600; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">멀티 플라자</span><small style="color: #999; font-size: 0.82rem;">모든 생활 서비스</small></div>
+      <div class="infra-item"><i class="fas fa-utensils" style="font-size: 1.8rem; color: #806600; margin-bottom: 15px; display: block;"></i><span style="font-size: 0.95rem; color: #333; font-weight: 700; display: block; margin-bottom: 6px;">맛집/카페</span><small style="color: #999; font-size: 0.82rem;">호수변 레스토랑</small></div>
     </div>
   </div>
 
   <div class="address-box" style="text-align: center; padding: 60px 40px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 20px; margin: 40px auto 60px; max-width: 800px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
-    <div class="address-icon" style="font-size: 2.2rem; color: #a89277; margin-bottom: 25px;"><i class="fas fa-location-dot"></i></div>
+    <div class="address-icon" style="font-size: 2.2rem; color: #806600; margin-bottom: 25px;"><i class="fas fa-location-dot"></i></div>
     <strong style="font-size: 1.4rem; color: #333; display: block; margin-bottom: 12px; font-weight: 800;">JOEUN House (조은하우스)</strong>
     <p class="address-text" style="color: #444; font-size: 1.15rem; font-weight: 500;">Juriquilla, Queretaro, Mexico</p>
     <p class="security-notice" style="font-size: 0.9rem; color: #999; border-top: 1px solid #eee; display: inline-block; padding-top: 18px; margin-top: 20px;">※ 주거 보안을 위해 상세 주소는 예약 확인 후 개별 안내해 드립니다.</p>
@@ -187,9 +188,7 @@
   </div>
 </div>
 
-<div class="btn-group" style="display: flex; gap: 15px; justify-content: center; margin: 30px 0; flex-wrap: wrap; position: relative;">
-  
-  <div class="location-footer-wrapper" style="max-width: 850px; margin: 0 auto; padding: 20px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
+<div class="location-footer-wrapper" style="max-width: 850px; margin: 0 auto; padding: 20px; font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;">
     <div class="btn-group" style="display: flex; gap: 15px; justify-content: center; margin: 30px 0; flex-wrap: wrap; position: relative;">
       <a href="https://wa.me/5213316995321" target="_blank" style="display: flex; align-items: center; text-decoration: none; padding: 15px 35px; border-radius: 50px; color: white; font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); transition: 0.3s ease;">
         <i class="fab fa-whatsapp" style="margin-right: 12px; font-size: 1.5rem;"></i><span>WhatsApp 상담</span>
@@ -202,11 +201,11 @@
 
     <div class="footer-section" style="padding: 50px 0; border-top: 1px solid #eee; background: #fff; text-align: center;">
       <div style="line-height: 1.8; color: #777;">
-        <h3 style="color: #333; font-size: 18px; letter-spacing: 1px; margin: 0 0 15px 0; font-weight: 700;">JOEUN House <span style="font-weight: 400; font-size: 16px; color: #a89277;">(조은하우스)</span></h3>
+        <h3 style="color: #333; font-size: 18px; letter-spacing: 1px; margin: 0 0 15px 0; font-weight: 700;">JOEUN House <span style="font-weight: 400; font-size: 16px; color: #806600;">(조은하우스)</span></h3>
         <div style="font-size: 13.5px; letter-spacing: 0.2px; display: inline-block; text-align: center;">
           <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">대표:</span>인성식 (Seongsik In)</div>
           <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">위치:</span>Juriquilla, Queretaro, Mexico</div>
-          <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">Email:</span>seongsikin@gmail.com</div>
+          <div style="margin-bottom: 5px;"><span style="color: #333; font-weight: 700; margin-right: 8px;">Email:</span><span style="color: #806600;">seongsikin@gmail.com</span></div>
         </div>
         <p style="font-size: 11px; color: #ccc; margin-top: 35px; text-transform: uppercase; letter-spacing: 2px;">&copy; JOEUN HOUSE. All Rights Reserved.</p>
       </div>
