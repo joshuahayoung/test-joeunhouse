@@ -313,53 +313,6 @@
   </div>
 </div>
 
-<script>
-  (function() {
-    const page1Ids = ['1nWmO-7raDg_Tyec3kchgbUMBFUL9S8Gl', '1C-lYDd5eO87kcqOUrZzP6v3Rgh2zSdov', '1zYHLXt9v9BeSH0DkuhMA8qsQGNDTcr8O', '1QI7X3I8TaRYeRPMFBVPWN1h4zf8apblD', '1s7lNUCcRvhoJTeB5bRFEpNSRDuK7nfxN', '1-gRggMoImYLlklMPET_dhONxl-khNIhX', '1UPgYHGdP6mWN8ldbd7MMWujNJ0pLt93a', '1aK5gtSf3MFvJXi8lFUJPLRbfww4tUCLV'];
-    const page2Ids = ['129q-vC9Y9zPgftJmKslJ6WLoLAdCJPxy', '1MYY_umDTJYBIhHIGgdRYMlGmJcFqh7CJ', '14kAoIQjZA7Ci2YB5fVXwfN93V2jMXbS1', '1BLA1ivF10n2s9QRfXppHOdoSVbD-SNd7', '1KrTcxS-9-51t9xPzjTRdUxj3v4A5Zkf8', '1aK5gtSf3MFvJXi8lFUJPLRbfww4tUCLV', '1VQGkxyf5Pa-GvsUiR2EuqEcYUnTEb_jg', '18vLh0Ve3ht3mfwLZc6CtNRiRboJI4HM3'];
-
-    const allLunchImageIds = [...page1Ids, ...page2Ids];
-    const lunchFullImages = allLunchImageIds.map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`);
-    let currentLunchPage = 1;
-    const lunchGridContainer = document.getElementById('lunch-grid');
-    const lunchPageIndicator = document.getElementById('lunchPageIndicator');
-
-    function renderLunchGrid(page) {
-      lunchGridContainer.style.opacity = '0';
-      setTimeout(() => {
-        lunchGridContainer.innerHTML = '';
-        const start = (page - 1) * 8;
-        const currentIds = allLunchImageIds.slice(start, start + 8);
-        currentIds.forEach((id, index) => {
-          const img = document.createElement('img');
-          img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w600`;
-          img.style.cssText = "width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px; cursor: pointer; border: 1px solid #eee; transition: transform 0.3s ease;";
-          img.onmouseover = () => img.style.transform = "scale(1.03)";
-          img.onmouseout = () => img.style.transform = "scale(1)";
-          img.onclick = () => popupLunchGallery(start + index);
-          lunchGridContainer.appendChild(img);
-        });
-        lunchPageIndicator.innerText = `${page} / 2`;
-        lunchGridContainer.style.opacity = '1';
-        currentLunchPage = page;
-      }, 200);
-    }
-    document.getElementById('prevLunchPage').onclick = () => renderLunchGrid(currentLunchPage === 1 ? 2 : 1);
-    document.getElementById('nextLunchPage').onclick = () => renderLunchGrid(currentLunchPage === 2 ? 1 : 2);
-    renderLunchGrid(1);
-
-    function popupLunchGallery(index) {
-      const w = Math.min(window.innerWidth, 1000);
-      const h = Math.min(window.innerHeight, 900);
-      const popup = window.open("", "LunchGallery", `width=${w},height=${h},top=${(screen.height-h)/2},left=${(screen.width-w)/2}`);
-      let html = `<html><head><title>Lunch Gallery</title><style>body{margin:0;background:#000;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;overflow:hidden;font-family:sans-serif;}.nav-btn{position:absolute;top:50%;transform:translateY(-50%);font-size:60px;color:rgba(255,255,255,0.4);cursor:pointer;padding:30px;transition:0.3s;}#mainImg{max-width:90%;max-height:80vh;object-fit:contain;transition:opacity 0.2s;}</style></head><body><div style="position:absolute;top:25px;right:25px;font-size:45px;cursor:pointer;" onclick="window.close()">×</div><div class="nav-btn" style="left:10px" onclick="move(-1)">❮</div><img id="mainImg" src="${lunchFullImages[index]}"><div class="nav-btn" style="right:10px" onclick="move(1)">❯</div><div id="cp" style="position:absolute;bottom:30px;letter-spacing:2px;color:rgba(255,255,255,0.6);">${index+1} / ${lunchFullImages.length}</div><script>let i=${index};const imgs=${JSON.stringify(lunchFullImages)};function move(s){i=(i+s+imgs.length)%imgs.length;const m=document.getElementById("mainImg");m.style.opacity=0.5;setTimeout(()=>{m.src=imgs[i];document.getElementById("cp").innerText=(i+1)+" / "+imgs.length;m.style.opacity=1;},100);}window.onkeydown=(e)=>{if(e.key==="ArrowLeft")move(-1);if(e.key==="ArrowRight")move(1);if(e.key==="Escape")window.close();};<\/script></body></html>`;
-      popup.document.write(html);
-    }
-  })();
-</script>
-
-
-
 <div class="dining-footer-container" style="max-width: 850px; margin: 0 auto; padding-top: 20px; text-align: center;">
   <p style="color: #999; font-size: 0.9rem; margin: 20px 0 40px; font-style: italic; font-family: 'Malgun Gothic', sans-serif;">
     ※ 식사 관련 상세 문의는 언제든 편하게 연락 주시기 바랍니다.
@@ -405,7 +358,7 @@
     };
 
     (function() {
-      const diningPage1 = ['1glH9ChuLsQrHT1fkiyh4XalaohNuu12b', '1VrdN8tmpvmew_LeVGJ2_O78k8yTxbYy-', '1Qt5QiSaBESvLdubUCgWENTj7uoMEOM9q', '1PAwAxNVrdGGkA8sVJXzI_6MG4md_xPDB', '1IIoqUX4rUpwCWv4qrFhqJsuLJ_V8Mx9d', '13-OOgVTi-URtNshkfSbo8NHy_PDU9uyl', '15JABSdQESKl9B-pXhSv5PEUkHjZ87-np', '1G7lpPlI07mfvPWIV0SVWnHHyPZSU3iAX'];
+      const diningPage1 = ['1glH9ChuLsQrHT1fkiyh4XalaohNuu12b', '1VrdN8tmpvmew_LeVGJ2_O78k8yTxbYy-', '1Qt5QiSaBESvLdubUCgWENTj7uoMEOM9q', '1PAwAxNVrdGGkA8sVJXzI_6MG4md_xPDB', '1IIoqUX4rUpwCWv4qrFhqJsuLJ_V8Mx9d', '13-OOgVTi-URtNshkfSbo8NHy_PDU9uyl', '15JABSdQESKl9B-pXhSv5PEUkHjZ87-np', '1u_mjAcrFZxcFdAhsw1K9DeVHyjvRjbTQ'];
       const diningPage2 = ['1z82Fcoq-PoXTNBaCqlBTWBKjorqwHnJK', '1gEWo5M6P-ksuTnh5AGHOqT65IegM4tx2', '1tLjF45RxxmzDJJSX5Zy2Cz9eVabVVhLQ', '1h4k6RlEIO_6vFnGy9q1-s3VwWjCYeiLt', '1IMGN4Shc4Er1AyL5ZIB-6TstQ_cmyuhC', '1uJzS3QaFg4ZPiOdlZirRDq6Omt8Fgvti', '1tBfBRvhnZA65rkFIjUpr0mRKJ8V1Ty_Q', '1zAZGFbIx3m-HPB4Of4Eq_d7Ai93j5ZJf'];
       const allDiningIds = [...diningPage1, ...diningPage2];
       const diningFullImages = allDiningIds.map(id => `https://drive.google.com/thumbnail?id=${id}&sz=w1200`);
